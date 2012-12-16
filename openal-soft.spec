@@ -1,11 +1,11 @@
 Summary:	OpenAL implementation
 Name:		openal-soft
-Version:	1.15
+Version:	1.15.1
 Release:	1
 License:	GPL v2
 Group:		Applications
 Source0:	http://kcat.strangesoft.net/openal-releases/%{name}-%{version}.tar.bz2
-# Source0-md5:	0eeb0551420b8fec300fe5db6d9a7902
+# Source0-md5:	ea83dec3b9655a27d28e7bc7cae9cd71
 BuildRequires:	alsa-lib-devel
 BuildRequires:	cmake
 BuildRequires:	pulseaudio-devel

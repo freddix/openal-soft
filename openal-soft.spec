@@ -1,11 +1,11 @@
 Summary:	OpenAL implementation
 Name:		openal-soft
-Version:	1.15.1
+Version:	1.16.0
 Release:	1
 License:	GPL v2
 Group:		Applications
 Source0:	http://kcat.strangesoft.net/openal-releases/%{name}-%{version}.tar.bz2
-# Source0-md5:	ea83dec3b9655a27d28e7bc7cae9cd71
+# Source0-md5:	14db4b0d12f07252070b4fe5eb5911f6
 BuildRequires:	alsa-lib-devel
 BuildRequires:	cmake
 BuildRequires:	pulseaudio-devel
@@ -26,7 +26,7 @@ This is the package containing the header files for openal library.
 %prep
 %setup -q
 
-sed -i -e "/Requires.*/d" openal.pc.in
+%{__sed} -i -e "/Requires.*/d" openal.pc.in
 
 %build
 cd build
